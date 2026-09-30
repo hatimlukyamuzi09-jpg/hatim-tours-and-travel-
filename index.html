@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hatim Gift Hub</title>
+  <title>Hatim Tours & Travel | Explore Uganda</title>
 
   <style>
     * {
@@ -14,63 +14,96 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
       color: #222;
+      background: #f7f7f7;
+      line-height: 1.6;
     }
 
     header {
-      background: #111;
+      background: #0b3d2e;
       color: white;
-      padding: 25px 15px;
+      padding: 20px;
       text-align: center;
     }
 
     header h1 {
       font-size: 30px;
-      margin-bottom: 8px;
+      margin-bottom: 5px;
     }
 
     header p {
-      color: #ddd;
+      font-size: 15px;
     }
 
-    .hero {
-      background: white;
-      padding: 45px 20px;
+    nav {
+      background: #082c22;
+      padding: 12px;
       text-align: center;
     }
 
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+      url("https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 30px;
+    }
+
     .hero h2 {
-      font-size: 28px;
-      margin-bottom: 12px;
+      font-size: 42px;
+      margin-bottom: 15px;
     }
 
     .hero p {
-      color: #666;
-      margin-bottom: 20px;
+      font-size: 19px;
+      max-width: 650px;
+      margin: auto;
     }
 
-    .shop {
+    .button {
       display: inline-block;
-      background: #111;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 25px;
+      margin-top: 25px;
+      padding: 13px 25px;
+      background: #f4b400;
+      color: #111;
       text-decoration: none;
+      border-radius: 7px;
+      font-weight: bold;
     }
 
-    .products {
-      padding: 30px 15px;
+    section {
+      padding: 55px 20px;
       max-width: 1100px;
       margin: auto;
     }
 
-    .products h2 {
+    section h2 {
       text-align: center;
-      margin-bottom: 25px;
+      color: #0b3d2e;
+      margin-bottom: 30px;
+      font-size: 30px;
     }
 
-    .grid {
+    .about {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
@@ -78,113 +111,141 @@
 
     .card {
       background: white;
+      padding: 25px;
       border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-      padding-bottom: 18px;
+      text-align: center;
+      box-shadow: 0 3px 12px rgba(0,0,0,.1);
     }
 
-    .card .image {
-      height: 180px;
-      background: #ddd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 55px;
-    }
-
-    .card h3,
-    .card p,
-    .card a {
-      margin-left: 15px;
-      margin-right: 15px;
+    .card .icon {
+      font-size: 45px;
+      margin-bottom: 12px;
     }
 
     .card h3 {
-      margin-top: 15px;
+      color: #0b3d2e;
+      margin-bottom: 10px;
     }
 
-    .price {
-      margin-top: 8px;
-      font-weight: bold;
-    }
-
-    .order {
-      display: block;
-      background: #111;
+    .contact {
+      background: #0b3d2e;
       color: white;
       text-align: center;
-      padding: 10px;
-      border-radius: 20px;
-      text-decoration: none;
-      margin-top: 15px;
+      max-width: none;
+    }
+
+    .contact h2 {
+      color: white;
     }
 
     footer {
-      background: #111;
+      background: #082c22;
       color: white;
       text-align: center;
-      padding: 25px 15px;
-      margin-top: 30px;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>🎁 Hatim Gift Hub</h1>
-    <p>Beautiful gifts for every occasion</p>
-  </header>
+<header>
+  <h1>HATIM TOURS & TRAVEL</h1>
+  <p>Discover Uganda. Experience Africa.</p>
+</header>
 
-  <section class="hero">
-    <h2>Find the Perfect Gift</h2>
-    <p>Discover unique gifts for your loved ones.</p>
-    <a href="#products" class="shop">Shop Now</a>
-  </section>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#tours">Tours</a>
+  <a href="#destinations">Destinations</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section class="products" id="products">
-    <h2>Our Gifts</h2>
+<section class="hero" id="home">
+  <div>
+    <h2>Explore the Pearl of Africa</h2>
+    <p>
+      Discover unforgettable safaris, adventures and travel experiences
+      across Uganda with Hatim Tours & Travel.
+    </p>
 
-    <div class="grid">
+    <a class="button"
+       href="https://wa.me/256746608944">
+       Plan Your Trip
+    </a>
+  </div>
+</section>
 
-      <div class="card">
-        <div class="image">🎁</div>
-        <h3>Gift Box</h3>
-        <p>Beautifully prepared gift box.</p>
-        <p class="price">UGX 50,000</p>
-        <a class="order" href="https://wa.me/256746608944Hello%20Hatim%20Gift%20Hub%2C%20I%20want%20to%20order%20a%20Gift%20Box.">
-          Order on WhatsApp
-        </a>
-      </div>
+<section id="about">
+  <h2>About Hatim Tours & Travel</h2>
 
-      <div class="card">
-        <div class="image">🧸</div>
-        <h3>Teddy Bear</h3>
-        <p>A lovely gift for someone special.</p>
-        <p class="price">UGX 40,000</p>
-        <a class="order" href="https://wa.me/256746608944text=Hello%20Hatim%20Gift%20Hub%2C%20I%20want%20to%20order%20a%20Teddy%20Bear.">
-          Order on WhatsApp
-        </a>
-      </div>
+  <div class="about">
+    <p>
+      Hatim Tours & Travel helps travelers discover the beauty,
+      wildlife, culture and adventure of Uganda. From exciting
+      safaris to memorable tours, we are here to help you experience
+      the Pearl of Africa.
+    </p>
+  </div>
+</section>
 
-      <div class="card">
-        <div class="image">🌹</div>
-        <h3>Gift Flowers</h3>
-        <p>Beautiful flowers for special occasions.</p>
-        <p class="price">UGX 30,000</p>
-        <a class="order" href="https://wa.me/256746608944?text=Hello%20Hatim%20Gift%20Hub%2C%20I%20want%20to%20order%20Gift%20Flowers.">
-          Order on WhatsApp
-        </a>
-      </div>
+<section id="tours">
+  <h2>Our Tours & Experiences</h2>
 
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">🦁</div>
+      <h3>Wildlife Safaris</h3>
+      <p>Experience Uganda's incredible wildlife and natural beauty.</p>
     </div>
-  </section>
 
-  <footer>
-    <p>© 2026 Hatim Gift Hub</p>
-    <p>Part of Hatim Tours and Travel</p>
-  </footer>
+    <div class="card">
+      <div class="icon">🌿</div>
+      <h3>Nature Adventures</h3>
+      <p>Explore forests, lakes, rivers and breathtaking landscapes.</p>
+    </div>
 
-</body>
-</html>
+    <div class="card">
+      <div class="icon">🥾</div>
+      <h3>Adventure Tours</h3>
+      <p>Enjoy exciting outdoor activities and unforgettable adventures.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌍</div>
+      <h3>Custom Trips</h3>
+      <p>Let us help you create a travel experience that fits your plans.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="destinations">
+  <h2>Explore Uganda</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">🦍</div>
+      <h3>Bwindi</h3>
+      <p>Discover the remarkable mountain gorilla experience.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🦁</div>
+      <h3>Murchison Falls</h3>
+      <
